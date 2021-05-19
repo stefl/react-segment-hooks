@@ -17,6 +17,7 @@ interface Options {
   debug?: boolean;
   timeout?: number;
   anonymizeIp?: boolean;
+  proxy?: string;
 }
 
 /**
