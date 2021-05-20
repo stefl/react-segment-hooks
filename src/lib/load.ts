@@ -56,7 +56,8 @@ export async function loadSegmentSnippet(
     if (debug) console.log(`[Segment] Loading analytics.js...`);
     if (debug) console.log(`[Segment] Using write key: ${apiKey}`);
     await loadScript(
-      `https://${proxy || 'cdn.segment.com'}/analytics.js/v1/${apiKey}/analytics.min.js`
+      `https://${proxy ||
+        'cdn.segment.com'}/analytics.js/v1/${apiKey}/analytics.min.js`
     );
     if (debug) console.log('[Segment] analytics.js is loaded and ready ✅');
   } catch (error) {
